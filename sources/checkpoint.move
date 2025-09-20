@@ -101,7 +101,7 @@ module suimming_move::checkpoint {
             label: checkpoint.label,
         });
 
-        transfer::public_transfer(checkpoint, sender(ctx));
+        transfer::share_object(checkpoint);
     }
 
     public fun toggle_checkpoint(
