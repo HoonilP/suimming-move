@@ -128,6 +128,10 @@ module suimming_move::nft {
         sentence.letters_used
     }
 
+    public fun get_id(sentence: &Sentence): &UID {
+        &sentence.id
+    }
+
     // Display setup (optional, for NFT marketplaces)
     // Note: Display creation would typically be done in a separate init function
     // with proper publisher setup. This is left as a placeholder for future implementation.
